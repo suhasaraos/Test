@@ -45,9 +45,26 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Puzzles\TowersOfHanoi\TowersOfHanoi.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Algorithms\BinarySearch\" />
+    <Folder Include="Algorithms\BreadthFirstSearch\" />
+    <Folder Include="Algorithms\DepthFirstSearch\" />
+    <Folder Include="Algorithms\MergerSort\" />
+    <Folder Include="Algorithms\QuickSort\" />
+    <Folder Include="DataStructures\Graphs\" />
+    <Folder Include="DataStructures\HashTables\" />
+    <Folder Include="DataStructures\Heaps\" />
+    <Folder Include="DataStructures\LinkedLists\" />
+    <Folder Include="DataStructures\Queues\" />
+    <Folder Include="DataStructures\Stacks\" />
+    <Folder Include="DataStructures\Trees\" />
+    <Folder Include="DataStructures\Tries\" />
+    <Folder Include="DataStructures\Vectors\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DSAlgos.Puzzles.TowersOfHanoi;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,14 @@ namespace DSAlgos
     {
         static void Main(string[] args)
         {
+            #region Puzzles
+
+            new TowersOfHanoi().Run();
+
+            #endregion
+
+            Console.ReadLine();
         }
+
     }
 }
