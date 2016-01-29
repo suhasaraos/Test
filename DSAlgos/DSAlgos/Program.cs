@@ -1,4 +1,5 @@
-﻿using DSAlgos.Puzzles;
+﻿using DSAlgos.Algorithms;
+using DSAlgos.Puzzles;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,12 @@ namespace DSAlgos
             new TowersOfHanoi().Run();
 
             #endregion
+
+            #region Algorithms
+
+            new QuickSort().RunIteratively();
+
+            #endregion  
 
             Console.ReadLine();
         }
