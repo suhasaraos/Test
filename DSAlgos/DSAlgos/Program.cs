@@ -1,4 +1,4 @@
-﻿using DSAlgos.Puzzles.TowersOfHanoi;
+﻿using DSAlgos.Puzzles;
 using System;
 using System.Collections.Generic;
 using System.Linq;

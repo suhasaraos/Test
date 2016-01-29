@@ -43,29 +43,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Algorithms\BinarySearch.cs" />
+    <Compile Include="Algorithms\BreadthFirstSearch.cs" />
+    <Compile Include="Algorithms\DepthFirstSearch.cs" />
+    <Compile Include="Algorithms\MergeSort.cs" />
+    <Compile Include="Algorithms\QuickSort.cs" />
+    <Compile Include="DataStructures\Graph.cs" />
+    <Compile Include="DataStructures\HashTable.cs" />
+    <Compile Include="DataStructures\Heap.cs" />
+    <Compile Include="DataStructures\LinkedList.cs" />
+    <Compile Include="DataStructures\PriorityQueue.cs" />
+    <Compile Include="DataStructures\Stack.cs" />
+    <Compile Include="DataStructures\Tree.cs" />
+    <Compile Include="DataStructures\Trie.cs" />
+    <Compile Include="DataStructures\Vector.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Puzzles\TowersOfHanoi\TowersOfHanoi.cs" />
+    <Compile Include="Puzzles\TowersOfHanoi.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Algorithms\BinarySearch\" />
-    <Folder Include="Algorithms\BreadthFirstSearch\" />
-    <Folder Include="Algorithms\DepthFirstSearch\" />
-    <Folder Include="Algorithms\MergerSort\" />
-    <Folder Include="Algorithms\QuickSort\" />
-    <Folder Include="DataStructures\Graphs\" />
-    <Folder Include="DataStructures\HashTables\" />
-    <Folder Include="DataStructures\Heaps\" />
-    <Folder Include="DataStructures\LinkedLists\" />
-    <Folder Include="DataStructures\Queues\" />
-    <Folder Include="DataStructures\Stacks\" />
-    <Folder Include="DataStructures\Trees\" />
-    <Folder Include="DataStructures\Tries\" />
-    <Folder Include="DataStructures\Vectors\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DSAlgos.Puzzles.TowersOfHanoi
+namespace DSAlgos.Puzzles
 {
     public class TowersOfHanoi
     {
