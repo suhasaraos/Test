@@ -1,4 +1,5 @@
 ﻿using DSAlgos.Algorithms;
+using DSAlgos.DataStructures;
 using DSAlgos.Puzzles;
 using System;
 using System.Collections.Generic;
@@ -12,22 +13,43 @@ namespace DSAlgos
     {
         static void Main(string[] args)
         {
-            #region Puzzles
+            //DemoPuzzles();
 
-            //new TowersOfHanoi().Run();
+            //DemoAlgorithms();
 
-            new Anagrams().Run();
-
-            #endregion
-
-            #region Algorithms
-
-            //new QuickSort().RunIteratively();
-
-            #endregion  
+            DemoDataStructures();
 
             Console.ReadLine();
         }
+
+        #region Puzzles
+        static void DemoPuzzles()
+        {
+            new TowersOfHanoi().Run();
+
+            new Anagrams().Run();
+
+            new ReduceWorkEquation().Run();
+        }
+        #endregion
+
+
+        #region Algorithms
+        static void DemoAlgorithms()
+        {
+            new InsertionSort().Run();
+        }
+
+        #endregion
+
+        #region DataStructures
+        static void DemoDataStructures()
+        {
+            new Tree().Run();
+        }
+
+        #endregion
+
 
     }
 }

@@ -47,6 +47,7 @@
     <Compile Include="Algorithms\BreadthFirstSearch.cs" />
     <Compile Include="Algorithms\DepthFirstSearch.cs" />
     <Compile Include="Algorithms\MergeSort.cs" />
+    <Compile Include="Algorithms\InsertionSort.cs" />
     <Compile Include="Algorithms\QuickSort.cs" />
     <Compile Include="DataStructures\Graph.cs" />
     <Compile Include="DataStructures\HashTable.cs" />
@@ -60,6 +61,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Puzzles\Anagrams.cs" />
+    <Compile Include="Puzzles\ReduceWorkEquation.cs" />
     <Compile Include="Puzzles\TowersOfHanoi.cs" />
   </ItemGroup>
   <ItemGroup>
