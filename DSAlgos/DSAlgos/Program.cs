@@ -14,13 +14,15 @@ namespace DSAlgos
         {
             #region Puzzles
 
-            new TowersOfHanoi().Run();
+            //new TowersOfHanoi().Run();
+
+            new Anagrams().Run();
 
             #endregion
 
             #region Algorithms
 
-            new QuickSort().RunIteratively();
+            //new QuickSort().RunIteratively();
 
             #endregion  
 

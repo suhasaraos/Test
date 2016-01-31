@@ -13,18 +13,22 @@ namespace DSAlgos.Puzzles
     {
         public void Run()
         {
-            Permute("abcd");
+            Permute("abcd", "");
         }
 
-        string Permute(string s)
+        void Permute(string toPermute, string permuted)
         {
-            foreach(var charcter in s.ToCharArray())
+            if (toPermute.Length <= 1)
             {
-                return charcter + Permute(s.Replace(charcter.ToString(), ""));
+                Console.WriteLine(permuted + toPermute);                
             }
-
-            return "";
+            else
+            {
+                foreach (var charcter in toPermute.ToCharArray())
+                {
+                    Permute(toPermute.Replace(charcter.ToString(), string.Empty), permuted + charcter.ToString());
+                }
+            }
         }
-
     }
 }
