@@ -45,7 +45,11 @@ namespace DSAlgos
         #region DataStructures
         static void DemoDataStructures()
         {
-            new Tree().Run();
+            //new Tree().Run();
+
+            //new LinkedList().Run();
+
+            new GraphDemo().Run();
         }
 
         #endregion
