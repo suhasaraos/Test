@@ -13,11 +13,11 @@ namespace DSAlgos
     {
         static void Main(string[] args)
         {
-            //DemoPuzzles();
+            DemoPuzzles();
 
             //DemoAlgorithms();
 
-            DemoDataStructures();
+            //DemoDataStructures();
 
             Console.ReadLine();
         }
@@ -25,11 +25,15 @@ namespace DSAlgos
         #region Puzzles
         static void DemoPuzzles()
         {
-            new TowersOfHanoi().Run();
+            //new TowersOfHanoi().Run();
 
-            new Anagrams().Run();
+            //new Anagrams().Run();
 
-            new ReduceWorkEquation().Run();
+            //new ReduceWorkEquation().Run();
+
+            //new CreateBSTUsingSortedArray().Run();
+
+            new CheckTreeIsBalanced().Run();
         }
         #endregion
 

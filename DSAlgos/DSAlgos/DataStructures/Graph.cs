@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DSAlgos.Algorithms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,9 @@ namespace DSAlgos.DataStructures
         public void Run()
         {
             Graph<string> graph = new Graph<string>();
+
+            var bfs = new BreadthFirstSearch();
+
             graph.Nodes = new GraphNode<string>[4];
 
             var a = new GraphNode<string>("a");
@@ -33,9 +37,9 @@ namespace DSAlgos.DataStructures
 
             PrintAdjacencyList(graph);          
 
-            Console.WriteLine("Is there a route from a to d: " + SearchBFS(graph, a, d));
+            Console.WriteLine("Is there a route from a to d: " + bfs.SearchRoute(graph, a, d));
 
-            Console.WriteLine("Is there a route from d to a: " + SearchBFS(graph, d, a));
+            Console.WriteLine("Is there a route from d to a: " + bfs.SearchRoute(graph, d, a));
         }        
 
         void PrintAdjacencyList(Graph<string> g)
@@ -53,62 +57,7 @@ namespace DSAlgos.DataStructures
 
                 Console.WriteLine(sb.ToString());
             }
-        }
-
-        bool SearchDFS(Graph<string> g, GraphNode<string> start, GraphNode<string> end)
-        {
-            if (start == end) return true;
-
-            foreach (var node in g.Nodes)
-            {
-                node.State = NodeState.Unvisited;
-            }
-
-            return false;
-            //foreach (var node in g.Nodes)
-            //{
-            //    node.State = NodeState.Unvisited;
-            //}
-        }
-
-        bool SearchBFS(Graph<string> g, GraphNode<string> start, GraphNode<string> end)
-        {
-            if (start == end) return true;
-
-            Queue<GraphNode<string>> visitingQueue = new Queue<GraphNode<string>>();
-
-            foreach(var node in g.Nodes)
-            {
-                node.State = NodeState.Unvisited;
-            }
-
-            visitingQueue.Enqueue(start);
-
-            GraphNode<string> currentNode;
-
-            while(visitingQueue.Count > 0)
-            {
-                currentNode = visitingQueue.Dequeue();
-
-                if(currentNode!=null)
-                {
-                    foreach(var node in currentNode.Children)
-                    {
-                        if(node.State == NodeState.Unvisited)
-                        {
-                            if (node == end)
-                                return true;
-                            else
-                            {                               
-                                visitingQueue.Enqueue(node);
-                            }
-                        }
-                    }
-                }
-                currentNode.State = NodeState.Visited;
-            }
-            return false;
-        }
+        }        
     }
 
     public class Graph<T>
