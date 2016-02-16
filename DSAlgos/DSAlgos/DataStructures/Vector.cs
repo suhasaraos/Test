@@ -8,5 +8,6 @@ namespace DSAlgos.DataStructures
 {
     class Vector
     {
+
     }
 }
