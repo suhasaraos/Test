@@ -9,25 +9,24 @@ namespace DSAlgos.Algorithms
 {
     class DepthFirstSearch
     {
-        bool SearchDFS(Graph<string> g, GraphNode<string> start, GraphNode<string> end)
+        public bool SearchRoute(Graph<string> g, GraphNode<string> start, GraphNode<string> end)
         {
             if (start == end) return true;
 
+            //Set all nodes to unvisited first
             foreach (var node in g.Nodes)
             {
                 node.State = NodeState.Unvisited;
             }
 
+            //Start DFS
+            foreach (var node in g.Nodes)
+            {
+                SearchRoute(g, start, end);
+                node.State = NodeState.Unvisited;
+            }
+
             return false;
-            //foreach (var node in g.Nodes)
-            //{
-            //    node.State = NodeState.Unvisited;
-            //}
-
-          
-
-         
-            
         }
 
     }

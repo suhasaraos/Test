@@ -50,6 +50,7 @@
     <Compile Include="Algorithms\InsertionSort.cs" />
     <Compile Include="Algorithms\QuickSort.cs" />
     <Compile Include="DataStructures\Graph.cs" />
+    <Compile Include="DataStructures\GraphwithList.cs" />
     <Compile Include="DataStructures\HashTable.cs" />
     <Compile Include="DataStructures\Heap.cs" />
     <Compile Include="DataStructures\LinkedList.cs" />

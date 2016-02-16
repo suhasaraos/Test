@@ -42,8 +42,9 @@ namespace DSAlgos.Algorithms
                             }
                         }
                     }
+                
+                    currentNode.State = NodeState.Visited;
                 }
-                currentNode.State = NodeState.Visited;
             }
             return false;
         }

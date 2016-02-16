@@ -14,6 +14,7 @@ namespace DSAlgos.DataStructures
             Graph<string> graph = new Graph<string>();
 
             var bfs = new BreadthFirstSearch();
+            var dfs = new DepthFirstSearch();
 
             graph.Nodes = new GraphNode<string>[4];
 
@@ -37,9 +38,14 @@ namespace DSAlgos.DataStructures
 
             PrintAdjacencyList(graph);          
 
-            Console.WriteLine("Is there a route from a to d: " + bfs.SearchRoute(graph, a, d));
+            //Console.WriteLine("Is there a route from a to d: " + bfs.SearchRoute(graph, a, d));
 
-            Console.WriteLine("Is there a route from d to a: " + bfs.SearchRoute(graph, d, a));
+            //Console.WriteLine("Is there a route from d to a: " + bfs.SearchRoute(graph, d, a));
+
+            //Console.WriteLine("Is there a route from a to d: " + dfs.SearchRoute(a, d));
+
+            //Console.WriteLine("Is there a route from d to a: " + dfs.SearchRoute(d, a));
+
         }        
 
         void PrintAdjacencyList(Graph<string> g)
