@@ -36,7 +36,10 @@ namespace DSAlgos
 
             //new CreateBSTUsingSortedArray().Run();
 
-            new CheckTreeIsBalanced().Run();
+            //new CheckTreeIsBalanced().Run();
+            //new RotatedArray().Run();
+
+            new MergeSort().Run();
         }
         #endregion
 

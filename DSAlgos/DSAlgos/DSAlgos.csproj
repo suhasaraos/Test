@@ -62,9 +62,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Puzzles\Anagrams.cs" />
-    <Compile Include="Puzzles\CheckTreeIsBalanced.cs" />
-    <Compile Include="Puzzles\CreateBSTUsingSortedArray.cs" />
     <Compile Include="Puzzles\ReduceWorkEquation.cs" />
+    <Compile Include="Puzzles\RotatedArray.cs" />
     <Compile Include="Puzzles\TowersOfHanoi.cs" />
   </ItemGroup>
   <ItemGroup>
